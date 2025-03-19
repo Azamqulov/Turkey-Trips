@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Çerez Politikası | Türkiye Gezileri</title>
+  <meta name="description" content="Türkiye Gezileri web sitesinin çerez politikası. Çerezlerin nasıl kullanıldığı ve yönetildiği hakkında bilgi.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Policy Page Specific Styles */
+    .policy-header {
+      background-color: var(--primary-color);
+      padding: 10rem 0 5rem;
+      position: relative;
+    }
+    
+    .policy-header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('images/pattern-bg.png');
+      background-size: cover;
+      opacity: 0.1;
+    }
+    
+    .policy-title {
+      color: var(--white-color);
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .policy-title h1 {
+      font-family: var(--heading-font);
+      font-size: 4.8rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    
+    .policy-title p {
+      font-size: 1.8rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    .policy-content {
+      padding: 5rem 0;
+      background-color: var(--white-color);
+    }
+    
+    .policy-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    
+    .policy-section {
+      margin-bottom: 4rem;
+    }
+    
+    .policy-section:last-child {
+      margin-bottom: 0;
+    }
+    
+    .policy-section h2 {
+      font-family: var(--heading-font);
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--dark-color);
+      margin-bottom: 2rem;
+      position: relative;
+      padding-bottom: 1rem;
+    }
+    
+    .policy-section h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background-color: var(--primary-color);
+    }
+    
+    .policy-section h3 {
+      font-family: var(--heading-font);
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: var(--dark-color);
+      margin: 2.5rem 0 1.5rem;
+    }
+    
+    .policy-section p {
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+    }
+    
+    .policy-section ul, 
+    .policy-section ol {
+      margin-bottom: 1.5rem;
+      padding-left: 2rem;
+    }
+    
+    .policy-section ul li, 
+    .policy-section ol li {
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    
+    .policy-section ul {
+      list-style: none;
+    }
+    
+    .policy-section ul li::before {
+      content: '\f00c';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      color: var(--primary-color);
+      position: absolute;
+      left: -2rem;
+    }
+    
+    .policy-section ol {
+      list-style-type: decimal;
+    }
+    
+    .policy-section table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+    }
+    
+    .policy-section table th,
+    .policy-section table td {
+      padding: 1.2rem;
+      border: 1px solid var(--gray-light-color);
+      text-align: left;
+    }
+    
+    .policy-section table th {
+      background-color: var(--light-color);
+      font-weight: 600;
+    }
+    
+    .policy-section table tr:nth-child(even) {
+      background-color: var(--light-color);
+    }
+    
+    .policy-section .highlight-box {
+      background-color: rgba(231, 76, 60, 0.1);
+      border-left: 4px solid var(--primary-color);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 0 var(--radius-small) var(--radius-small) 0;
+    }
+    
+    .policy-section .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+    
+    .policy-footer {
+      background-color: var(--light-color);
+      padding: 3rem 0;
+      text-align: center;
+    }
+    
+    .policy-footer p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .policy-footer .btn {
+      margin: 0 1rem;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .policy-title h1 {
+        font-size: 3.6rem;
+      }
+      
+      .policy-section h2 {
+        font-size: 2.6rem;
+      }
+      
+      .policy-section h3 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header scrolled">
+    <div class="header-container">
+      <div class="logo-container">
+        <a href="index.html" class="logo">
+          <span class="logo-icon"><i class="fas fa-compass"></i></span>
+          <span class="logo-text">Türkiye<span>Gezileri</span></span>
+        </a>
+      </div>
+      
+      <div class="header-right">
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html#home" class="nav-link">Ana Sayfa</a></li>
+            <li class="nav-item"><a href="index.html#destinations" class="nav-link">Destinasyonlar</a></li>
+            <li class="nav-item"><a href="index.html#tours" class="nav-link">Turlar</a></li>
+            <li class="nav-item"><a href="index.html#experiences" class="nav-link">Deneyimler</a></li>
+            <li class="nav-item"><a href="index.html#gallery" class="nav-link">Galeri</a></li>
+            <li class="nav-item"><a href="index.html#contact" class="nav-link">İletişim</a></li>
+          </ul>
+        </nav>
+        
+        <div class="header-actions">
+          <div class="language-selector">
+            <div class="selected-language">
+              <span class="flag-icon">🇹🇷</span>
+              <span class="language-name">Türkçe</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            
+          </div>
+          
+          <a href="index.html#contact" class="btn-contact">İletişime Geç</a>
+          
+          <button class="menu-toggle">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"><i class="fas fa-compass"></i></span>
+        <span class="logo-text">Türkiye<span>Gezileri</span></span>
+      </a>
+      <button class="mobile-menu-close">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    
+    <nav class="mobile-nav">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item"><a href="index.html#home" class="mobile-nav-link">Ana Sayfa</a></li>
+        <li class="mobile-nav-item"><a href="index.html#destinations" class="mobile-nav-link">Destinasyonlar</a></li>
+        <li class="mobile-nav-item"><a href="index.html#tours" class="mobile-nav-link">Turlar</a></li>
+        <li class="mobile-nav-item"><a href="index.html#experiences" class="mobile-nav-link">Deneyimler</a></li>
+        <li class="mobile-nav-item"><a href="index.html#gallery" class="mobile-nav-link">Galeri</a></li>
+        <li class="mobile-nav-item"><a href="index.html#contact" class="mobile-nav-link">İletişim</a></li>
+      </ul>
+    </nav>
+    
+    <div class="mobile-menu-footer">
+      <div class="mobile-language">
+        <h4>Dil Seçimi</h4>
+        <ul class="mobile-language-list">
+          <li><a href="#" class="active"><span class="flag-icon">🇹🇷</span> Türkçe</a></li>
+          <li><a href="#"><span class="flag-icon">🇬🇧</span> English</a></li>
+          <li><a href="#"><span class="flag-icon">🇩🇪</span> Deutsch</a></li>
+          <li><a href="#"><span class="flag-icon">🇷🇺</span> Русский</a></li>
+        </ul>
+      </div>
+      
+      <div class="mobile-social">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Policy Header -->
+  <section class="policy-header">
+    <div class="container">
+      <div class="policy-title">
+        <h1>Çerez Politikası</h1>
+        <p>Türkiye Gezileri web sitesinde kullanılan çerezler hakkında bilgi</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Policy Content -->
+  <section class="policy-content">
+    <div class="policy-container">
+      <div class="policy-section">
+        <h2>Çerez Politikası Hakkında</h2>
+        <p>Son güncelleme tarihi: 15 Mart 2023</p>
+        <p>Türkiye Gezileri olarak, web sitemizi ziyaret ettiğinizde, size daha iyi bir deneyim sunmak için çerezleri kullanıyoruz. Bu Çerez Politikası, hangi çerezleri kullandığımızı, bunları nasıl kullandığımızı ve çerezlerle ilgili tercihlerinizi nasıl yönetebileceğinizi açıklamaktadır.</p>
+        <p>Bu politika, Türkiye Gezileri web sitesini (<a href="https://www.turkiyegezileri.com">www.turkiyegezileri.com</a>) kullanımınız için geçerlidir. Web sitemizi kullanarak, bu politikada açıklanan şekilde çerez kullanımını kabul etmiş olursunuz.</p>
+      </div>
+      
+      <div class="policy-section">
+        <h2>Çerez Nedir?</h2>
+        <p>Çerezler, web sitelerinin bilgisayarınızda veya mobil cihazınızda depoladığı küçük metin dosyalarıdır. Bu dosyalar, web sitesinin ziyaretiniz sırasında ve gelecekteki ziyaretlerinizde sizi tanımasına yardımcı olur. Çerezler, web sitesinin daha verimli çalışmasını sağlar ve site sahiplerine kullanıcı deneyimini iyileştirmek için bilgi sağlar.</p>
+        
+        <div class="highlight-box">
+          <p>Çerezler genellikle şunları içerir:</p>
+          <ul>
+            <li>Çerezi yerleştiren web sitesinin adı</li>
+            <li>Çerezin ömrü</li>
+            <li>Rastgele oluşturulmuş benzersiz bir değer</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="policy-section">
+        <h2>Kullandığımız Çerez Türleri</h2>
+        <p>Web sitemizde kullandığımız çerezleri aşağıdaki kategorilere ayırabiliriz:</p>
+        
+        <h3>1. Kesinlikle Gerekli Çerezler</h3>
+        <p>Bu çerezler, web sitemizin düzgün çalışması için gereklidir ve sistemlerimizde kapatılamazlar. Genellikle yalnızca sizin gerçekleştirdiğiniz ve gizlilik tercihlerinizi ayarlama, oturum açma veya form doldurma gibi hizmet taleplerine karşılık olarak ayarlanırlar. Tarayıcınızı bu çerezleri engelleyecek şekilde ayarlayabilirsiniz, ancak bu durumda sitenin bazı bölümleri çalışmayabilir.</p>
+        
+        <h3>2. Performans Çerezleri</h3>
+        <p>Bu çerezler, ziyaretçilerin web sitemizi nasıl kullandığı hakkında bilgi toplamamıza olanak tanır. Örneğin, hangi sayfaların en çok ziyaret edildiğini ve ziyaretçilerin sitede nasıl gezindiğini anlamamıza yardımcı olurlar. Bu çerezlerin topladığı tüm bilgiler anonimdir.</p>
+        
+        <h3>3. İşlevsellik Çerezleri</h3>
+        <p>Bu çerezler, web sitemizin gelişmiş işlevsellik ve kişiselleştirme sunmasına olanak tanır. Bunlar, bizim tarafımızdan veya web sitemize eklediğimiz üçüncü taraf hizmetleri tarafından ayarlanabilir. Bu çerezleri devre dışı bırakırsanız, bu hizmetlerin bazıları veya tamamı düzgün çalışmayabilir.</p>
+        
+        <h3>4. Hedefleme/Reklam Çerezleri</h3>
+        <p>Bu çerezler, reklam ortaklarımız tarafından web sitemiz aracılığıyla ayarlanabilir. Bu şirketler, ilgi alanlarınıza göre profil oluşturmak ve diğer sitelerde ilgili reklamları göstermek için bunları kullanabilir. Doğrudan kişisel bilgilerinizi depolamazlar, ancak tarayıcınızı ve internet cihazınızı benzersiz şekilde tanımaya dayanırlar.</p>
+        
+        <table>
+          <thead>
+            <tr>
+              <th>Çerez Türü</th>
+              <th>Amaç</th>
+              <th>Süre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Oturum Çerezleri</td>
+              <td>Web sitesinde gezinirken geçici olarak bilgi depolamak için kullanılır</td>
+              <td>Tarayıcı oturumu sonunda silinir</td>
+            </tr>
+            <tr>
+              <td>Kalıcı Çerezler</td>
+              <td>Tercihlerinizi ve ayarlarınızı hatırlamak için kullanılır</td>
+              <td>Belirli bir süre sonra veya manuel olarak silinene kadar kalır</td>
+            </tr>
+            <tr>
+              <td>Analitik Çerezler</td>
+              <td>Web sitesi trafiğini analiz etmek ve kullanıcı davranışını anlamak için kullanılır</td>
+              <td>Değişken (genellikle 1-2 yıl)</td>
+            </tr>
+            <tr>
+              <td>Reklam Çerezleri</td>
+              <td>İlgi alanlarınıza göre hedefli reklamlar sunmak için kullanılır</td>
+              <td>Değişken (genellikle 1-2 yıl)</td>
+            </tr>
+          </tbody>
+        </table>
+
